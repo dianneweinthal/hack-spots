@@ -29,9 +29,6 @@
                 <li><a href="http://www.twitter.com/jllord" target="_blank">@JLLORD</a></li>
             </ul>
         </div>
-        <div>
-            <img src="images/IMG_0025.jpg" alt="Chevron, Los Angeles, CA"> 
-        </div>
         <div id="cp_widget_9fb6c3d0-5e1b-4ae1-be61-8ad2a9a0e74f">...</div><script type="text/javascript">
 var cpo = []; cpo["_object"] ="cp_widget_9fb6c3d0-5e1b-4ae1-be61-8ad2a9a0e74f"; cpo["_fid"] = "AwEAdZuswQra";
 var _cpmp = _cpmp || []; _cpmp.push(cpo);
@@ -102,7 +99,7 @@ c.parentNode.insertBefore(cp, c); })(); </script>
     <script id="selectedSpot" type="text/html">
         {{#rows}}
             <h4 class="fauxButton">SELECTED SPOT</h4>
-            <h2>{{Station}}</h2>
+            <h2>{{station}}</h2>
             <p class="colorText">{{address}}<p>
             <p class="colorText">{{city}}{{#state}}, {{state}}{{/state}}{{#postcode}}, {{postcode}}{{/postcode}}</p>
             <ul>
@@ -142,7 +139,7 @@ c.parentNode.insertBefore(cp, c); })(); </script>
             // create map, tilelayer (map background), markers and popups
             var map = Sheetsee.loadMap("map")
             Sheetsee.addTileLayer(map, 'jllord.n7aml2bc')
-            var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, "<h2>{{ Station }}</h2>", true)
+            var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, "<h2>{{ station }}</h2>", true)
 
             // find the latest spot with the most important
             // info filled in (to prevent map breaking if
