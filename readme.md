@@ -1,3 +1,5 @@
+# The following readme is from the original site, which I have forked and edited. See below for details on original project. For more information on Gasoline Stations: photography archive project, visit the page!
+
 # Hi!
 
 ![screenshot](https://raw.github.com/jlord/hack-spots/gh-pages/img/hackspotsss.png)
