@@ -192,11 +192,15 @@ insert charts and text here
         {{/rows}}
    
     </script>
-    <script>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
         function drawGID() {
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0range=B:B1000');
+          'https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit?usp=sharingrange=B:B1000');
       query.send(handleQueryResponse);
     }
 
