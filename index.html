@@ -16,22 +16,6 @@
         <link media="screen" rel="stylesheet" type="text/css" href="css/site.css">
         <link rel="stylesheet" href="css/MarkerCluster.css" />
         <link rel="stylesheet" href="css/MarkerCluster.Default.css" />
-        
-     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
-  var query = new google.visualization.Query(https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0range=B:B1000);
-  query.send(handleQueryResponse);
-}
-
-function handleQueryResponse(response) {
-  var data = response.getDataTable();
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, null);
-} 
-        </script>
 
     </head>
 <body>
@@ -207,6 +191,22 @@ insert charts and text here
             </ul>
         {{/rows}}
     </script>
+    
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var query = new google.visualization.Query(https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0range=B:B1000);
+  query.send(handleQueryResponse);
+}
+
+function handleQueryResponse(response) {
+  var data = response.getDataTable();
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, null);
+} 
+        </script>
     
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
