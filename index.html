@@ -71,22 +71,24 @@ c.parentNode.insertBefore(cp, c); })(); </script>
          <div id="analysis">
              <h3>ANALYSIS</h3>
 insert charts and text here
+                 <div id="piechart" style="width: 900px; height: 500px;"></div>
+
     <div id="data" class="container">
             <h3> DATA </h3>
                 <div id="theNumberofSpots"></div>
-        <p>And is available on this <a href="https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0" target="_blank">Google Spreadsheet</a>. Analytic visualizations are linked directly to this data, so anytime a new gas station is added to the sheet, the map and pie chart automatically update.</p>
-
-        <br> <p>Digital assets also include image files, metadata extractions, source code, and repository backups.</p>
-                  <h4> METHODOLOGY </h4>
-                    <p> The workflow developed here can easily be adapted for other archives. Approaching spatial metadata, for photographs in particular, allows for questions and (hopefully) some interesting answers not typically prioritized in visual art files.</p>
-            <p> This project implements <b>metadata extraction, data structuring, geocoding, data visualization, and static site creation with HTML, CSS, and JavaScript</b>. </p>
-           <h4>STANDARDS/h4>
+        <p>And is available on this <a href="https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0" target="_blank">Google Spreadsheet</a>. </p>
+            <p>Analytic visualizations are linked directly to this data, so anytime a new gas station is added to the sheet, the map and pie chart automatically update.</p>
+      <p>Digital assets also include image files, metadata extractions, source code, and repository backups.</p>
+                  <h4> Methodology </h4>
+                    <p> This project implements <b>metadata extraction, data structuring, geocoding, data visualization, and static site creation with HTML, CSS, and JavaScript</b>. </p>            
+        <p> The workflow developed here can easily be adapted for other archives. Approaching spatial metadata, for photographs in particular, allows for questions and (hopefully) some interesting answers not typically prioritized in visual art files.</p>
+           <h4>Standards</h4>
             <ul>
                 <li>Use open source tools whenever possible</li>
                 <li>Build with expansion in mind</li>
                 <li>Keep a copy of version history and digital assets saved locally</li>
             </ul>
-             <h4>IMAGE FORMATS</h4>
+             <h4>Image Formats</h4>
             <ul>
                 <li>JPEGs from original iPhone upload: 4032 x 3024 px at 72 ppi, approximately 2 MB</li>
                 <li>JPEGs reformatted for web display; batch export from Adobe Lightroom with custom preset for 1500 px on longest side at 72 ppi, including all metadata and copyright, approx 400 KB</li>
@@ -94,7 +96,7 @@ insert charts and text here
             <p>For more information on the analytic and display tools used, see the <a href=#contributors>Contributors</a> section. </p>    
             <h4> SUSTAINABILITY </h4>
                     <p> text </p>
-             <h4> DISCREPANCIES </h4>
+             <h4> Discrepancies </h4>
                      <p> <b> The Berkeley gas stations don't look like they're in Berkeley. Yikes. </b> </p> <br>
                      <p> When spatial metadata was exported from these image files, latitude and longitude coordinates placed them in the middle of the San Francisco Bay or about 30 miles southwest of Berkeley, around Menlo Park. The reverse geocode process -- which obtains an address from GPS coordinates -- only returned a zip code, with no street information for these files. And that zip code did not match the location of the actual image content, as determined through manual investigation. In the following cases, GPS coordinates on the map correlate to that original (inaccurate) zip code, but the correct street addresses were manually entered into the dataset: </p>
        <br>
@@ -104,14 +106,14 @@ insert charts and text here
         <p><b>National Gasoline</b> at 849 University Ave, Berkeley, CA 94710 - originally listed at 94063</p>
         <br>
         <p>This discrepancy serves as an example of inherent data error from the iPhone's GPS coordinate system. With a data set this sample size, manual quality assurance was possible to find these inaccuracies. On a larger scale, however, preemptive check on GPS data from image files during upload & and more refined geocoding during processing could help solve this issue. Additional files may have incorrect GPS coordinates with matching street addresses. </p>
-             <h4> FURTHER READING </h4>
+             <h4> Further Reading </h4>
             <p> The DHLab at Yale University's 
                 <a href="http://dhlab.yale.edu/projects/photogrammar.html">Photogrammer</a>
                 project visualizes an archive of photographs from the United States Farm Security Administration and Office of War Information (FSA-OWI) from 1935–1945, and provides a more thoroughly developed instance of organizing, searching, visualizing, and presenting photographic metadata. A 2017 article in 
 <a href="http://www.digitalhumanities.org/dhq/vol/11/2/000299/000299.html">Digital Humanities Quarterly</a>
 describes their process and findings in further detail. </p>
             <p> <a href="https://github.com/mapninja/CV">Stace Maples</a>, a member of the Photogrammer team, is currently at work on a geospatial visualization of <a href="http://www.getty.edu/research/special_collections/notable/ruscha.html"> Ed Ruscha's Streets of Los Angeles Archive </a> at the Getty Research Institute. An initial description of this project is available from the <a href="http://ws-dl.blogspot.com/2017/04/2017-04-17-personal-digital-archiving.html"> Web Sciences and Digital Libraries Research Group at Old Dominion University </a>. 
-    <h4> IMAGE RIGHTS </h4>
+    <h4> Image Rights </h4>
                     <p>All photographs &#169; Dianne Weinthal, 2018. All rights reserved.</p>
     </div>
      <div id="contact" class="container">
