@@ -190,23 +190,27 @@ insert charts and text here
                 <li><a href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
             </ul>
         {{/rows}}
+   
     </script>
-    
-     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
-  var query = new google.visualization.Query(https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0range=B:B1000);
-  query.send(handleQueryResponse);
-}
+    <script>
+        function drawGID() {
 
-function handleQueryResponse(response) {
-  var data = response.getDataTable();
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, null);
-} 
-        </script>
+      var query = new google.visualization.Query(
+          'https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0range=B:B1000');
+      query.send(handleQueryResponse);
+    }
+
+    function handleQueryResponse(response) {
+      if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+
+      var data = response.getDataTable();
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+    </script>
     
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
