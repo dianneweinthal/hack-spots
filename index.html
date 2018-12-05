@@ -26,9 +26,9 @@
         <div>
             <ul class="nav">
                  <li><a href="#info">INFO</a> -</li>
-                <li><a href="#image">IMAGES</a> -</li>
                 <li><a href="#rightSide">MAP</a> -</li>
                 <li><a href="#analysis">ANALYSIS</a> -</li>
+                <li><a href="#image">IMAGES</a> -</li>
                 <li><a href="#data">DATA</a> -</li>
                 <li><a href="#contact">CONTACT</a> -</li>
                 <li><a href="#contributors">CONTRIBUTORS</a> -</li>
@@ -40,20 +40,10 @@
         
          <div id="info" class="container">
             <h3>INFO</h3>
-                    <p> Since 2013, I have been photographing gas stations across California and the Southwest. The collection includes iPhone documentation, which has captured latitude and longitude coordinates for each image. Extracting these metadata elements offers an opportunity to look at a creative process in relationship to space and and my own trajectory on the road. </p>
-                    <p> This project examines a relatively small sample set of images to implement its method of analysis. As of December 2018, the total archive includes 2839 files. Many are digitized negatives and print scans from Fujifilm FP-100C peel-apart film, shot on a Polaroid Land camera. Because these images are scanned after the fact, their metadata does not reflect the same spatial information as the iPhone digital files. The scope of this project was therefore limited to a recent sample of iPhone images for the sake of accurate analysis.</p> 
+                    <p> Since 2013, I have been photographing gas stations across California and the Southwest. The collection includes iPhone documentation, which captured latitude and longitude coordinates for each image. Extracting these metadata elements offers an opportunity to see my own trajectory on the road, and more broadly, build a method to look at creative process in relationship to space.</p>
+                    <p> This project examines a relatively small sample set of images to implement its method of analysis. As of December 2018, the total archive includes 2839 files. Many are digitized negatives and print scans from Fujifilm FP-100C peel-apart film, shot on a Polaroid Land camera. Because these images are scanned after the fact, their metadata does not reflect the same spatial information as the iPhone digital files. The scope of this project was therefore limited to a recent sample of iPhone images, taken from February to September, 2018, for the sake of accurate analysis.</p> 
                     <p> Created in Fall 2018 for UCLA Information Studies 289: Digital Methods for Research and Scholarship </p>
-    </div>
-        
-        <div id="image" class="container"> </div>
-        <div id="cp_widget_03cb520a-381d-49be-a20e-e6f1125fd18a">...</div><script type="text/javascript">
-var cpo = []; cpo["_object"] ="cp_widget_03cb520a-381d-49be-a20e-e6f1125fd18a"; cpo["_fid"] = "AsLAmZu_xIwK";
-var _cpmp = _cpmp || []; _cpmp.push(cpo);
-(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-var c = document.getElementsByTagName("script")[0];
-c.parentNode.insertBefore(cp, c); })(); </script>
-        
+    </div>  
         
         <div class="container">
             <div id="rightSide">
@@ -76,16 +66,31 @@ insert text on charts
     <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRCnqHQqAlCPK7Ewbq0wGjQmC6VrILq7DDuV7RE9hTgh0J8D7P_kRC9Xxguo6AzBjj9jCXAXRJa8k6M/pubchart?oid=484058409&amp;format=interactive"></iframe>
    insert text on analysis of visual images by metadata elements
     </div>
+    
+        
+        <div id="image" class="container"> 
+            <h4><i>Try filtering by city name or gas station brand...</i></h4></div>
+
+        <div id="cp_widget_03cb520a-381d-49be-a20e-e6f1125fd18a">...</div><script type="text/javascript">
+var cpo = []; cpo["_object"] ="cp_widget_03cb520a-381d-49be-a20e-e6f1125fd18a"; cpo["_fid"] = "AsLAmZu_xIwK";
+var _cpmp = _cpmp || []; _cpmp.push(cpo);
+(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+var c = document.getElementsByTagName("script")[0];
+c.parentNode.insertBefore(cp, c); })(); </script>
+    
     <div id="data" class="container">
             <h3> DATA </h3>
                 <div id="theNumberofSpots"></div>
         <p>And is available on this <a href="https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0" target="_blank">Google Spreadsheet</a>. </p>
-            <p>Visualizations are linked directly to this data, so anytime a new gas station is added to the sheet, the count, map, and chart automatically update.</p>
+            <p>Visualizations are linked directly to this data -- so anytime a new gas station is added to the sheet, the count, map, and charts automatically update.</p>
       <p>Digital assets also include image files, metadata extractions, source code, and repository backups.</p>
                   <h4> Methodology </h4>
-                    <p> This project implements <b>metadata extraction, data structuring, geocoding, data visualization, and static site creation with HTML, CSS, and JavaScript</b>. </p>            
-        <p> The workflow developed here can easily be adapted for other archives. Approaching spatial metadata, for photographs in particular, allows for questions and (hopefully) some interesting answers not typically prioritized in visual art files.</p>
-           <h4>Standards</h4>
+                    <p> This project implements <b>metadata extraction, data structuring, geocoding, data visualization, and static site creation with HTML, CSS, and JavaScript</b>. For more information on the analytic and display tools used, see the <a href=#contributors>Contributors</a> section. </p>    
+</p>            
+        <p> The workflow developed with these methods can easily be adapted for other archives. Approaching spatial metadata, for photographs in particular, allows for questions and (hopefully) some interesting answers not typically prioritized in visual art files.</p>
+   
+        <h4>Standards</h4>
             <ul>
                 <li>Use open source tools whenever possible</li>
                 <li>Build with expansion in mind</li>
@@ -96,7 +101,6 @@ insert text on charts
                 <li>JPEGs from original iPhone upload: 4032 x 3024 px at 72 ppi, approximately 2 MB</li>
                 <li>JPEGs reformatted for web display; batch export from Adobe Lightroom with custom preset for 1500 px on longest side at 72 ppi, including all metadata and copyright, approx 400 KB</li>
             </ul>
-            <p>For more information on the analytic and display tools used, see the <a href=#contributors>Contributors</a> section. </p>    
             <h4> Sustainability </h4>
                     <p> text </p>
              <h4> Discrepancies </h4>
@@ -115,9 +119,12 @@ insert text on charts
                 project visualizes an archive of photographs from the United States Farm Security Administration and Office of War Information (FSA-OWI) from 1935–1945, and provides a more thoroughly developed instance of organizing, searching, visualizing, and presenting photographic metadata. A 2017 article in 
 <a href="http://www.digitalhumanities.org/dhq/vol/11/2/000299/000299.html">Digital Humanities Quarterly</a>
 describes their process and findings in further detail. </p>
-            <p> <a href="https://github.com/mapninja/CV">Stace Maples</a>, a member of the Photogrammer team, is currently at work on a geospatial visualization of <a href="http://www.getty.edu/research/special_collections/notable/ruscha.html"> Ed Ruscha's Streets of Los Angeles Archive </a> at the Getty Research Institute. An initial description of this project is available from the <a href="http://ws-dl.blogspot.com/2017/04/2017-04-17-personal-digital-archiving.html"> Web Sciences and Digital Libraries Research Group at Old Dominion University </a>. 
-    <h4> Image Rights </h4>
+            <br>
+    <p> <a href="https://github.com/mapninja/CV">Stace Maples</a>, a member of the Photogrammer team, is currently at work on a geospatial visualization of <a href="http://www.getty.edu/research/special_collections/notable/ruscha.html"> Ed Ruscha's Streets of Los Angeles Archive </a> at the Getty Research Institute. An initial description of this project is available from the <a href="http://ws-dl.blogspot.com/2017/04/2017-04-17-personal-digital-archiving.html"> Web Sciences and Digital Libraries Research Group at Old Dominion University </a>. 
+    <h4> Rights, Reproduction, and Repurposing</h4>
                     <p>All photographs &#169; Dianne Weinthal, 2018. All rights reserved.</p>
+                    <p>Unless otherwise stated, all other material including text, tools, and code are open source & available for use. Responsibility for confirming fair use lies with the user.</p>
+
     </div>
      <div id="contact" class="container">
             <h3>CONTACT</h3>
