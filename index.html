@@ -40,8 +40,8 @@
         
          <div id="info" class="container">
             <h3>INFO</h3>
-                    <p> Since 2013, I have been photographing gas stations across California and the Southwest. The collection includes iPhone documentation, which captured latitude and longitude coordinates for each image. Extracting these metadata elements offers an opportunity to see my own trajectory on the road, and more broadly, build a method to look at creative process in relationship to space.</p>
-                    <p> This project examines a relatively small sample set of images to implement its method of analysis. As of December 2018, the total archive includes 2839 files. Many are digitized negatives and print scans from Fujifilm FP-100C peel-apart film, shot on a Polaroid Land camera. Because these images are scanned after the fact, their metadata does not reflect the same spatial information as the iPhone digital files. The scope of this project was therefore limited to a recent sample of iPhone images, taken from February to September, 2018, for the sake of accurate analysis.</p> 
+            <p>Since 2013, I have been photographing gas stations across California and the Southwest. The collection includes iPhone documentation, which has captured GPS coordinates and timestamps. Extracting these metadata elements offers an opportunity to see my own trajectory on the road and, more broadly, build a method to look at creative process in relationship to space.</p>
+             <p> This project examines a relatively small sample set of images to implement its method of analysis. As of December 2018, the total archive includes 2839 files. Many are digitized negatives and print scans from Fujifilm FP-100C peel-apart film, shot on a Polaroid Land camera. Because these images are scanned after the fact, their metadata does not reflect the same spatial information as the iPhone digital files. The scope of this project was therefore limited to a recent sample of iPhone images, taken from February to September, 2018, for the sake of accurate analysis.</p> 
                     <p> Created in Fall 2018 for UCLA Information Studies 289: Digital Methods for Research and Scholarship </p>
     </div>  
         
@@ -62,11 +62,10 @@
     
          <div id="analysis">
              <h3>ANALYSIS</h3>
-<br>
-             <h4>Images per Gas Station, February - September, 2018</h4><br>
+             <h4>Images per Gas Station, February - September 2018</h4>
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRCnqHQqAlCPK7Ewbq0wGjQmC6VrILq7DDuV7RE9hTgh0J8D7P_kRC9Xxguo6AzBjj9jCXAXRJa8k6M/pubchart?oid=994433244&amp;format=interactive"></iframe>
-             <br>
-             <h4>Images per City, February - September, 2018</h4><br>
+             <br><br><br>
+             <h4>Images per City, February - September 2018</h4>
  <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRCnqHQqAlCPK7Ewbq0wGjQmC6VrILq7DDuV7RE9hTgh0J8D7P_kRC9Xxguo6AzBjj9jCXAXRJa8k6M/pubchart?oid=484058409&amp;format=interactive"></iframe>   
     </div>
     
@@ -86,14 +85,13 @@ c.parentNode.insertBefore(cp, c); })(); </script>
     <div id="data" class="container">
             <h3> DATA </h3>
                 <div id="theNumberofSpots"></div>
-        <p>And is available on this <a href="https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0" target="_blank">Google Spreadsheet</a>. </p>
+        <p>And is available on this <a href="https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0" target="_blank">Google Sheet</a>. </p>
             <p>Visualizations are linked directly to this data -- so anytime a new gas station is added to the sheet, the count, map, and charts automatically update.</p>
       <p>Digital assets also include image files, metadata extractions, source code, and repository backups.</p>
                   <h4> Methodology </h4>
-                    <p> This project implements <b>metadata extraction, data structuring, geocoding, data visualization, and static site creation with HTML, CSS, and JavaScript</b>. For more information on the analytic and display tools used, see the <a href=#contributors>Contributors</a> section. </p>    
-</p>            
-        <p> The workflow developed with these methods can easily be adapted for other archives. Approaching spatial metadata, for photographs in particular, allows for questions and (hopefully) some interesting answers not typically prioritized in visual art files.</p>
-      
+                    <p> Approaching spatial metadata, for photographs in particular, allows for questions and (hopefully) some interesting answers not typically prioritized in visual art files.</p>
+      <p>This project implements <b>metadata extraction, data structuring, geocoding, data visualization, and static site creation with HTML, CSS, and JavaScript</b>. For more information on the analytic and display tools used, see the <a href=#contributors>Contributors</a> section.    
+The workflow developed with these methods can easily be adapted for other archives by forking the <a href="https://github.com/dianneweinthal/IS289-photo-archive"> GitHub repository</a>, copying the <a hre="https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0">Google Sheet</a>, and replacing with another data set. </p>
              <h4> Discrepancies </h4>
                      <p> <b> The Berkeley gas stations don't look like they're in Berkeley. Yikes. </b> </p> <br>
                      <p> When spatial metadata was exported from these image files, latitude and longitude coordinates placed them in the middle of the San Francisco Bay or about 30 miles southwest of Berkeley, around Menlo Park. The reverse geocode process -- which obtains an address from GPS coordinates -- only returned a zip code, with no street information for these files. And that zip code did not match the location of the actual image content, as determined through manual investigation. In the following cases, GPS coordinates on the map correlate to that original (inaccurate) zip code, but the correct street addresses were manually entered into the dataset: </p>
