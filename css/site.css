@@ -30,14 +30,14 @@ code {font-family: "Consolas", "Ubuntu Mono", monospace; line-height: 22px; font
 ::-moz-selection {background: ##f8f8f8;}
 
 ul.nav {list-style: none; margin: 0px; padding: 0px;}
-ul.nav li {display: inline; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; padding-right: 4px;}
+ul.nav li {display: inline; font-family: arial black; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; padding-right: 4px;}
 ul.nav li a {border: none;}
-ul.nav li a:hover {border-bottom: 1px ##f8f8f8 solid;}
+ul.nav li a:hover {border-bottom: 2px ##0000ff solid;}
 
 #wrapper {margin: 0px auto; max-width: 900px; padding-top: 40px; /*margin-left: 250px;*/}
 
 .button {padding: 5px 5px; background-color: #BEBEBE; font-size: 10px; color: #fff;}
-.button:hover {background: #B9FCFC; color: #0000ff;}
+.button:hover {background: #BEBEBE; color: #0000ff;}
 .fauxButton {padding: 5px 5px; background-color: #FF0000; font-size: 11px; color: #fff; display: inline;}
 .fauxButton .selected {background-color: #FF0000;}
 .colorText {color: #ff2222; text-transform: uppercase; font-weight: 700;}
