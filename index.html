@@ -44,8 +44,8 @@
             <h3>INFO</h3>
      
             <p>Since 2013, I have been photographing gas stations across California and the Southwest. The collection of images includes iPhone documentation, which has captured GPS coordinates and timestamps. Extracting these metadata elements offers an opportunity to see my own trajectory on the road and, more broadly, build a method to look at creative process in relationship to space.</p>
-             <p> This project examines a relatively small sample set of images to implement its method of analysis. As of December 2018, the total archive includes 2839 files. Many are digitized negatives and print scans from Fujifilm FP-100C peel-apart film, shot on a Polaroid Land camera. Because these images are scanned after the fact, their metadata does not reflect the same spatial information as the iPhone digital files. The scope of this project was therefore limited to a recent sample of iPhone images, taken from February to September, 2018, for the sake of accurate analysis.</p> 
-                    <p> Created in Fall 2018 for UCLA Information Studies 289: Digital Methods for Research and Scholarship </p>
+             <p> This project examines a relatively small sample set of images to implement that method. As of December 2018, the total archive includes 2839 files. Many are digitized negatives and print scans from Fujifilm FP-100C peel-apart film, shot on a Polaroid Land camera. Because these images are scanned after the fact, their metadata does not reflect the same spatial information as the iPhone digital files. The scope of this project was therefore limited to a recent sample of iPhone images, taken from February to September, 2018, for the sake of accurate analysis.</p> 
+                    <p> Created in Fall 2018 for UCLA Information Studies 289: Digital Methods for Research and Scholarship.</p>
     </div>  
         
         <div class="container">
@@ -115,7 +115,7 @@
             </ul>
         </div>
             
-            <h4>Try searching by city name or gas station brand<br>For example, "Los Angeles" or "Chevron"</h4></div>
+            <h4>Try searching by city name or gas station<br>For example, "Los Angeles" or "Chevron"</h4></div>
        <div id="cp_widget_e5b45b53-6768-4b32-9c66-23193b3802d8">...</div><script type="text/javascript">
 var cpo = []; cpo["_object"] ="cp_widget_e5b45b53-6768-4b32-9c66-23193b3802d8"; cpo["_fid"] = "AsLAmZu_xIwK";
 var _cpmp = _cpmp || []; _cpmp.push(cpo);
@@ -148,7 +148,7 @@ c.parentNode.insertBefore(cp, c); })(); </script>
                   <h4> Methodology </h4>
                     <p> Approaching spatial metadata, for photographs in particular, allows for questions and (hopefully) some interesting answers not typically prioritized in visual art files.</p>
       <p>This project implements <b>metadata extraction, data structuring, geocoding, data visualization, and static site creation with HTML, CSS, and JavaScript</b>. For more information on the analytic and display tools used, see the <a href=#contributors>Contributors</a> section.    
-The workflow developed with these methods can easily be adapted for other archives by forking the <a href="https://github.com/dianneweinthal/IS289-photo-archive"> GitHub repository</a>, copying the <a hre="https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0">Google Sheet</a>, and replacing with another data set. </p>
+The workflow developed with these methods can easily be adapted for other archives by forking the <a href="https://github.com/dianneweinthal/IS289-photo-archive"> GitHub repository</a>, copying the <a href="https://docs.google.com/spreadsheets/d/1bsqzhvvRqvrhDRYkiqRiApKSIC7bojCXlRPPEX7pVaE/edit#gid=0">Google Sheet</a>, and replacing existing data with another set. </p>
              <h4> Discrepancies </h4>
                      <p> <b> The Berkeley gas stations don't look like they're in Berkeley. <span style="color: #ff0000">Yikes.</span> </b> </p> <br>
                      <p> When spatial metadata was exported from these image files, latitude and longitude coordinates placed them in the middle of the San Francisco Bay or about 30 miles southwest of Berkeley, around Menlo Park. For these files, the reverse geocode process -- which obtains an address from GPS coordinates -- only returned a zip code, with no street information. And that zip code did not match the location of the actual image content, as determined through manual investigation. In the following cases, GPS coordinates on the map correlate to that original (inaccurate) zip code, but the correct street addresses were manually entered into the dataset: </p>
@@ -158,7 +158,7 @@ The workflow developed with these methods can easily be adapted for other archiv
         <p><b>No. 1 Gasoline</b> at 1900 Martin Luther King Jr Way, Berkeley, CA 94704 - originally listed at 94063</p>
         <p><b>National Gasoline</b> at 849 University Ave, Berkeley, CA 94710 - originally listed at 94063</p>
         <br>
-        <p>This discrepancy serves as an example of inherent data error from the iPhone's GPS coordinate system. Additional files may have incorrect GPS coordinates, but with matching street addresses. For example, the gas station files located in Rosamond, CA, according to both GPS coordinates and reverse geocode address information, are in fact images of the Beverly Hills Union 76, a Los Angeles landmark of Googie architecture.</p>
+        <p>This discrepancy serves as an example of inherent data error from the iPhone's GPS coordinate system. Additional files have incorrect GPS coordinates, but returned matching street addresses. For example, the gas station files located in Rosamond, CA, according to both GPS coordinates and reverse geocode address information, are in fact images of the Beverly Hills Union 76, a Los Angeles landmark of Googie architecture.</p>
     <p>With a data set this sample size, manual quality assurance was possible to identify these inaccuracies. On a larger scale, however, preemptive check on GPS data from image files during upload and more refined geocoding during processing could help solve this issue.</p>         
     <h4> Relevant Research </h4>
         <p>The New York Public Library <a href="https://pic.nypl.org/">Photographers’ Identities Catalog</a> is a searchable map interface to a historical database of bibliographic records for photographers, studios, and manufacturers. Locations for each record appear as dots on a map, and can be exported as JSON or GeoJSON files for researchers’ use.</p>     
@@ -167,7 +167,6 @@ The workflow developed with these methods can easily be adapted for other archiv
                 project visualizes an archive of photographs from the United States Farm Security Administration and Office of War Information (FSA-OWI) from 1935–1945, and provides a more thoroughly developed instance of organizing, searching, visualizing, and presenting photographic metadata. A 2017 article in 
 <a href="http://www.digitalhumanities.org/dhq/vol/11/2/000299/000299.html">Digital Humanities Quarterly</a>
 describes their process and findings in further detail. </p>
-            <br>
     <p> <a href="https://github.com/mapninja/CV">Stace Maples</a>, a member of the Photogrammer team, is currently at work on a geospatial visualization of <a href="http://www.getty.edu/research/special_collections/notable/ruscha.html"> Ed Ruscha's Streets of Los Angeles Archive </a> at the Getty Research Institute. An initial description of this project is available from the <a href="http://ws-dl.blogspot.com/2017/04/2017-04-17-personal-digital-archiving.html"> Web Sciences and Digital Libraries Research Group at Old Dominion University </a>. 
     <h4> Rights, Reproduction, and Repurposing</h4>
                     <p>All photographs &#169; Dianne Weinthal, 2018. All rights reserved.</p>
